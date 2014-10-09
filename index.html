@@ -2,6 +2,7 @@
 <html>
 <title>game</title>
 <head>
+  <link rel="stylesheet" type="text/css" href="stylesheets/app.css">
   <script src="lib/util.js" ></script>
   <script src="lib/movingObject.js"></script>
   <script src="lib/asteroid.js"></script>
@@ -15,7 +16,13 @@
 </head>
 
 <body>
-  <canvas id="game-canvas" width="800" height="600"></canvas>
+  <canvas id="game-canvas" width="800" height="600">
+  </canvas>
+  <ul class="instruction">
+    <li> rotate: right-arrow-key OR left-arrow-key </li>
+    <li> acceleration: up-arrow-key OR down-arrow-key </li>
+    <li> shot: space key</li>
+  </ul>  
   <script>
   var canvas = document.getElementById("game-canvas");
   var ctx = canvas.getContext('2d');
